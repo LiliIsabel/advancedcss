@@ -1,0 +1,9 @@
+
+/*
+Stylesheet for first assignment in advanced css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+h1{
+    font-family: 'Lora', serif;
+  }
