@@ -7,3 +7,12 @@ Stylesheet for first assignment in advanced css
 h1{
     font-family: 'Lora', serif;
   }
+
+a:-webkit-any-link {
+    color: #333;
+    text-decoration: none;
+  }
+
+p{
+    font-family:'Helvetica', Arial, sans-serif;
+ }
