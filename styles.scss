@@ -1,0 +1,60 @@
+/*Variables assignment*/
+
+
+    $body-background-color: darkred;
+    $form-background-color:rgb(224, 188, 134);
+    $input-color: rgb(252, 228, 201);
+    $headlines-color : rgb(0, 79, 116);
+
+    $break-small: 20em;
+    $break-medium: 31em;
+    $break-large: 60em;  
+    
+    
+@mixin flex-container($axis, $wrap: nowrap) {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-flow: $axis $wrap;
+        -ms-flex-flow: $axis $wrap;
+        flex-flow: $axis $wrap;
+    }
+    
+fieldset > div {
+        @include flex-container(column); 
+          
+    }
+@mixin center ( $width, $maxwith:960px) {
+        width: $width;
+        max-width: $maxwidth;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+body{
+    background-color: $body-background-color;
+  
+    
+}
+form{
+    background-color: $form-background-color; 
+    @include center (50px,960px);
+}
+textarea{
+    @include breakpoint(small) { width:100% }
+    @include breakpoint(large) { 
+        @include flex-container(row); 
+         
+    }
+}
+
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-color;
+        flex:2;
+    }
+   
+}
+
