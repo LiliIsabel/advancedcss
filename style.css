@@ -1,105 +1,106 @@
-
 /*
 Stylesheet for first assignment in advanced css
+Update: converted to scss format
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
-head,body{
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+/*Variables used*/
+head, body {
   max-width: 800px;
   margin: auto;
 }
 
-h1,h2,div{
-    font-family: 'Lora', serif;
+h1, h2, div {
+  font-family: "Lora", serif;
 }
 
-h1 a:link, h1 a:hover, h1 a:visited,h1{
-    color:#333;
-    font-size: 70px;
-    text-align: center;
+h1 a:link, h1 a:hover, h1 a:visited, h1 {
+  color: #333;
+  font-size: 70px;
+  text-align: center;
 }
-p{
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-weight: bold;
- }
- nav ul li,ul{
+
+p {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav ul li, ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+/*example of nesting*/
+a {
+  text-decoration: none;
+  font-family: "Lora", serif;
+}
+a:link, a:visited {
+  color: #666;
+}
+a:hover {
+  color: #00ddff;
+}
+a:active {
+  color: #deb887;
+}
+
+nav ul {
+  width: 1px 0 1px 0;
+  style: solid;
+  color: #d0d0d0;
+  padding: 5px;
+}
+
+section {
+  margin: 0px 10px 0px 200px;
+  width: 0px 0 1px 1px;
+  style: solid;
+  color: #d0d0d0;
+  text-align: center;
+}
+
+.post-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.post-date {
+  float: left;
+  margin-top: 40px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  inline-size: 190px;
+  overflow-wrap: break-word;
+}
+
+figure {
+  text-align: center;
+}
+
+/*Media Query Fixes*/
+@media all and (max-width: 980px) {
+  nav ul, ul li {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+  .post-content {
+    align-items: center;
+    margin: 10px;
+    border: none;
+  }
+  .post-date {
+    float: none;
     display: flex;
-    justify-content: flex-end;
-    padding : 0 10px 0 10px;
-    text-transform: uppercase;
-    font-size: 22px; 
- }
- nav ul{
-    border-top: 1px solid #d0d0d0;
-    border-bottom: 1px solid #d0d0d0;
-    padding: 5px;
- }
- a:link{  
-    text-decoration: none;
-    font-family: 'Lora', serif; 
+    inline-size: auto;
+    justify-content: right;
+    border-bottom: 0.05px solid #d0d0d0;
   }
- /* normal and visited link */
- a:link, a:visited {
-    color: #666;
-  }
-   
-  /* hover link */
-  a:hover {
-    color:#00ddff;
-  }
-  
-  /* selected link */
-  a:active {
-    color: #deb887;
-  }
+}
 
-  section{
-    margin: 0px 10px 0px 200px;
-    border-left: 1px solid #d0d0d0;
-    border-bottom:1px dotted #d0d0d0;
-    text-align: center;
-  }
-  .post-content{
-    padding: 20px;
-    text-align: left;
-  }
-  .post-date{
-    float:left;
-    margin-top: 40px;
-    text-align:right;
-    font-size: 25px;
-    font-weight: 500;
-    text-transform: uppercase;
-    inline-size: 190px;
-    overflow-wrap: break-word;
-  }
-  
-  figure{
-    text-align: center;
-  }
-  
-  
- /*Media Query Fixes*/
-  @media all and (max-width:980px){
-    
-    nav ul,ul li{
-        flex-direction: column;
-        text-align: center;
-        margin: 10px;
-    }
-    .post-content{
-        align-items: center;
-        margin:10px;
-        border:none;
-
-      }
-    .post-date{
-        float:none;
-        display: flex;
-        inline-size: auto;
-        justify-content: right;
-        border-bottom: .05px solid #d0d0d0;
-    }
-
-  } 
+/*# sourceMappingURL=style.css.map */

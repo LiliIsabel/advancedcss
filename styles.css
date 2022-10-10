@@ -1,0 +1,47 @@
+/*Variables assignment*/
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+body {
+  background-color: darkred;
+}
+
+form {
+  background-color: rgb(224, 188, 134);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 20em) {
+  textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 60em) {
+  textarea {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+
+#contactform {
+  background-color: rgb(224, 188, 134);
+}
+#contactform input, #contactform textarea {
+  background-color: rgb(252, 228, 201);
+  flex: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */
